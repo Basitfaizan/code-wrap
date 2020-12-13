@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>code wrap/contact us</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<style>
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  .container {
+    margin-top: 10rem;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+
+  .container h1 {
+    font-size: 6rem;
+    margin-top: 13rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: inherit;
+    margin-top: 4rem;
+  }
+
+  .form_control {
+    display: flex;
+    flex-direction: column;
+    width: ;
+    height: 100%;
+    position: relative;
+    margin-top: 5rem;
+  }
+
+  input {
+    width: 55rem;
+    height: 5rem;
+    border: none;
+    outline: none;
+    padding: 0.8rem;
+    border-bottom: 0.3rem solid black;
+  }
+
+  textarea {
+    width: 55rem;
+    border: 0.3rem solid #D3D3D3;
+    outline: none;
+    padding: 1rem;
+  }
+
+  label {
+    font-size: 3rem;
+    position: absolute;
+    bottom: -0.2rem;
+    transition: all 0.4s;
+  }
+
+  .form_control input:hover {
+    border-color: #0CAFFF;
+  }
+
+  .form_control input:focus~label,
+  .form_control input:valid~label {
+    font-size: 2rem;
+    color: #0CAFFF;
+    transform: translateY(-5rem);
+  }
+
+  @media screen and (max-width: 800px) {
+    html {
+      font-size: 40%;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    html {
+      font-size: 35.5%;
+    }
+
+    .container h1 {
+      font-size: 5rem;
+      margin-top: 19rem;
+    }
+  }
+</style>
+
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <img src="1607741062454.png" />
+      <div class="logoName">
+        <h1>code</h1>
+        <h1>wrap</h1>
+      </div>
+    </div>
+    <ul id="menuItems">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About me</a></li>
+      <li><a href="Contact.html">Contact us</a></li>
+      <a href="login.html" class="btn" type="submit">Login</a>
+      <a href="sign.html" class="btn" type="submit">Sign-up</a>
+    </ul>
+    <div class="bar">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Feel free to contact us</h1>
+    <form action="" method="get" accept-charset="utf-8">
+      <div class="form_control">
+        <input required type="text" id="username" />
+        <label for="">Username</label>
+      </div>
+      <div class="form_control">
+        <input required type="number" id="phone" />
+        <label for="">phone number</label>
+      </div>
+      <div class="form_control">
+        <input required type="email" id="email" />
+        <label for="">email</label>
+      </div>
+      <div class="form_control">
+        <textarea placeholder="How may I help you" name="" id="txtArea" rows="8" cols="28"></textarea>
+      </div>
+    </form>
+  </div>
+  <footer>
+    <div class="logo">
+      <img src="1607741062454.png" />
+      <div class="logoName">
+        <h1>code</h1>
+        <h1>wrap</h1>
+      </div>
+    </div>
+    <h1 class="foot">&copy; copyright is reserved for code wrap</h1>
+    <div class="follow">
+      <h1>Follow me on</h1>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">YouTube</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+  <script src="main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
